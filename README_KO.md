@@ -7,11 +7,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MCP-Model%20Context%20Protocol-4F46E5?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP">
   <img src="https://img.shields.io/badge/NVIDIA-AI%20Skills%20%26%20Blueprints-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA AI">
-  <img src="https://img.shields.io/badge/카드%20수-520%2B%20검증됨-brightgreen?style=for-the-badge" alt="Cards Count">
+  <img src="https://img.shields.io/badge/카드%20수-540%20검증됨-brightgreen?style=for-the-badge" alt="Cards Count">
   <img src="https://img.shields.io/badge/라이선스-MIT-blue?style=for-the-badge" alt="License">
 </p>
 
-**520개 이상의 검증된 Model Context Protocol (MCP) 서버 명세 카드**와 **NVIDIA AI 에이전트 스킬 및 엔터프라이즈 솔루션 블루프린트**를 집대성한 프로덕션 레디 지식 베이스입니다.
+**540개 이상의 검증된 Model Context Protocol (MCP) 서버 명세 카드**와 **NVIDIA AI 에이전트 스킬 및 엔터프라이즈 솔루션 블루프린트**를 집대성한 프로덕션 레디 지식 베이스입니다.
 
 모든 카드는 **인간 개발자**와 **자율형 AI 에이전트**(Cursor, Claude Desktop, Windsurf, Antigravity, Cline 및 RAG 파이프라인) 모두가 즉시 파싱하고 활용할 수 있는 표준 원자적(Atomic) 마크다운 규격으로 제작되었습니다.
 
@@ -22,7 +22,7 @@
 - [개요](#-개요)
 - [저장소 구조](#-저장소-구조)
 - [카드 카테고리 분류](#-카드-카테고리-분류)
-  - [1. 검증된 외부 MCP 서버 카드 (165개)](#1-검증된-외부-mcp-서버-카드-165개)
+  - [1. 검증된 외부 MCP 서버 카드 (183개)](#1-검증된-외부-mcp-서버-카드-183개)
   - [2. NVIDIA AI 에이전트 스킬 카드 (326개)](#2-nvidia-ai-에이전트-스킬-카드-326개)
   - [3. NVIDIA 솔루션 블루프린트 카드 (31개)](#3-nvidia-솔루션-블루프린트-카드-31개)
 - [카드 표준 규격 (Anatomy)](#-카드-표준-규격-anatomy)
@@ -50,8 +50,8 @@ mcp-cards/
 ├── README_KO.md                   # 한국어 카탈로그 문서 (본 파일)
 ├── .gitignore                     # 저장소 화이트리스트 및 보안 파일 제외 설정
 │
-├── skills/                        # 491개 스킬 & MCP 카드
-│   ├── mcp-*.md                   # 165개 검증된 외부 MCP 서버 카드 (AWS, GCP, Stripe, GitHub 등)
+├── skills/                        # 509개 스킬 & MCP 카드
+│   ├── mcp-*.md                   # 183개 검증된 외부 MCP 서버 카드 (AWS, GCP, Salesforce, Kakao 등)
 │   ├── doca-*.md                  # DOCA DPU & 고성능 네트워킹 스킬 (~60개)
 │   ├── jetson-*.md                # Jetson 임베디드 & 엣지 AI 스킬 (~30개)
 │   ├── nemo-*.md                  # NeMo LLM 분산학습, 가드레일 & 에이전트 스킬 (~40개)
@@ -74,7 +74,7 @@ mcp-cards/
 
 ## 🏷️ 카드 카테고리 분류
 
-### 1. 검증된 외부 MCP 서버 카드 (165개)
+### 1. 검증된 외부 MCP 서버 카드 (183개)
 
 `skills/mcp-*.md` 경로에 위치하며, 패키지 소스, 전송 방식(stdio/SSE), 필수 환경 변수, 클라이언트 JSON 설정을 제공합니다:
 
@@ -84,11 +84,14 @@ mcp-cards/
 | **☁️ AWS 클라우드 & 서버리스** | AWS Core, DynamoDB, S3, Lambda, Bedrock AI, CloudWatch | [`mcp-aws-dynamodb.md`](skills/mcp-aws-dynamodb.md), [`mcp-aws-bedrock-ai.md`](skills/mcp-aws-bedrock-ai.md) |
 | **🌐 Google Cloud & Workspace** | GCP Core, BigQuery, Cloud Storage, Vertex AI, Workspace, Maps | [`mcp-google-bigquery.md`](skills/mcp-google-bigquery.md), [`mcp-google-vertex-ai.md`](skills/mcp-google-vertex-ai.md) |
 | **🏢 Microsoft Azure** | Azure Core, DevOps, Blob Storage, Cosmos DB, Azure OpenAI | [`mcp-azure-devops.md`](skills/mcp-azure-devops.md), [`mcp-azure-cosmosdb.md`](skills/mcp-azure-cosmosdb.md) |
-| **💳 결제 & 핀테크** | Stripe, PayPal, Square, Plaid, Wise, Brex, Adyen, Chargebee | [`mcp-stripe-payments.md`](skills/mcp-stripe-payments.md), [`mcp-square-payments.md`](skills/mcp-square-payments.md) |
+| **🏢 엔터프라이즈 SaaS & CRM** | Salesforce, Zendesk, PostHog, Mixpanel, Strapi, Contentful, Bitbucket, JetBrains | [`mcp-salesforce-crm.md`](skills/mcp-salesforce-crm.md), [`mcp-posthog-analytics.md`](skills/mcp-posthog-analytics.md) |
+| **⚙️ 워크플로우 & 에이전트 플랫폼** | n8n Automation, Dify.ai, Flowise AI, Zapier, Make | [`mcp-n8n-automation.md`](skills/mcp-n8n-automation.md), [`mcp-dify-workflow.md`](skills/mcp-dify-workflow.md) |
+| **🤖 프론티어 AI & 로컬 서빙** | DeepSeek AI, Qwen DashScope, Ollama Local, vLLM Distributed, ElevenLabs | [`mcp-deepseek-ai.md`](skills/mcp-deepseek-ai.md), [`mcp-ollama-local.md`](skills/mcp-ollama-local.md) |
+| **🇰🇷 한국 테크 & 핀테크** | 카카오톡 알림톡, 네이버 클라우드 플랫폼, 토스페이먼츠 | [`mcp-kakao-talk.md`](skills/mcp-kakao-talk.md), [`mcp-toss-payments.md`](skills/mcp-toss-payments.md) |
+| **💳 결제 & 글로벌 핀테크** | Stripe, PayPal, Square, Plaid, Wise, Brex, Adyen, Chargebee | [`mcp-stripe-payments.md`](skills/mcp-stripe-payments.md), [`mcp-square-payments.md`](skills/mcp-square-payments.md) |
 | **⚡ 클라우드 & 백엔드 BaaS** | Cloudflare, Supabase, Vercel, Convex, Upstash, Fly.io, Firebase | [`mcp-supabase-backend.md`](skills/mcp-supabase-backend.md), [`mcp-cloudflare-workers.md`](skills/mcp-cloudflare-workers.md) |
 | **🏗️ DevOps & 인프라 (IaC)** | Docker, Kubernetes, Terraform, Pulumi, Vault, ArgoCD, CircleCI | [`mcp-docker-containers.md`](skills/mcp-docker-containers.md), [`mcp-terraform-iac.md`](skills/mcp-terraform-iac.md) |
 | **🗄️ 데이터베이스 & 벡터 DB** | Neo4j, Milvus, Chroma, PostgreSQL, Redis, MongoDB, ClickHouse, Qdrant | [`mcp-neo4j-graph-db.md`](skills/mcp-neo4j-graph-db.md), [`mcp-milvus-vector.md`](skills/mcp-milvus-vector.md) |
-| **🤖 AI, 음성 합성/인식 & LLM** | ElevenLabs, Deepgram, AssemblyAI, Cohere, Anthropic, Groq, HuggingFace | [`mcp-elevenlabs-voice.md`](skills/mcp-elevenlabs-voice.md), [`mcp-deepgram-speech.md`](skills/mcp-deepgram-speech.md) |
 | **🔍 AI 웹 검색 & 스크래핑** | Tavily, Exa AI, Firecrawl, Jina Reader, Browserbase, SerpApi | [`mcp-tavily-search.md`](skills/mcp-tavily-search.md), [`mcp-firecrawl-web.md`](skills/mcp-firecrawl-web.md) |
 | **📊 관측성 & 모니터링** | Datadog, Sentry, Grafana, OpenTelemetry, New Relic, Axiom | [`mcp-sentry-errors.md`](skills/mcp-sentry-errors.md), [`mcp-datadog-monitoring.md`](skills/mcp-datadog-monitoring.md) |
 | **🔐 인증, 보안 & 네트워크** | Tailscale, Bitwarden, Cloudflare Zero Trust, Auth0, Clerk, Keycloak, Snyk | [`mcp-tailscale-network.md`](skills/mcp-tailscale-network.md), [`mcp-bitwarden-secrets.md`](skills/mcp-bitwarden-secrets.md) |

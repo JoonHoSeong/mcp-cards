@@ -7,11 +7,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MCP-Model%20Context%20Protocol-4F46E5?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP">
   <img src="https://img.shields.io/badge/NVIDIA-AI%20Skills%20%26%20Blueprints-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA AI">
-  <img src="https://img.shields.io/badge/Cards-520%2B%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
+  <img src="https://img.shields.io/badge/Cards-540%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
 
-A curated, production-ready knowledge base containing **520+ verified Model Context Protocol (MCP) server specification cards** and **NVIDIA AI Agent Skills & Solution Blueprints**. 
+A curated, production-ready knowledge base containing **540 verified Model Context Protocol (MCP) server specification cards** and **NVIDIA AI Agent Skills & Solution Blueprints**. 
 
 Every card is crafted in a standardized, atomic Markdown format optimized for both **human developers** and **autonomous AI agents** (Cursor, Claude Desktop, Windsurf, Antigravity, Cline, and RAG pipelines).
 
@@ -22,7 +22,7 @@ Every card is crafted in a standardized, atomic Markdown format optimized for bo
 - [Overview](#-overview)
 - [Repository Structure](#-repository-structure)
 - [Card Categories](#-card-categories)
-  - [1. Verified MCP Servers (165 Cards)](#1-verified-mcp-servers-165-cards)
+  - [1. Verified MCP Servers (183 Cards)](#1-verified-mcp-servers-183-cards)
   - [2. NVIDIA AI Agent Skills (326 Cards)](#2-nvidia-ai-agent-skills-326-cards)
   - [3. NVIDIA Solution Blueprints (31 Cards)](#3-nvidia-solution-blueprints-31-cards)
 - [Card Anatomy & Standard Format](#-card-anatomy--standard-format)
@@ -50,8 +50,8 @@ mcp-cards/
 ├── README_KO.md                   # Korean documentation & catalog index
 ├── .gitignore                     # Repository whitelist & secret protection
 │
-├── skills/                        # 491 Skill & MCP Cards
-│   ├── mcp-*.md                   # 165 Verified MCP Server Cards (AWS, GCP, Stripe, GitHub, etc.)
+├── skills/                        # 509 Skill & MCP Cards
+│   ├── mcp-*.md                   # 183 Verified MCP Server Cards (AWS, GCP, Salesforce, Kakao, etc.)
 │   ├── doca-*.md                  # DOCA DPU & High-Performance Networking Skills (~60)
 │   ├── jetson-*.md                # Jetson Embedded & Edge AI Skills (~30)
 │   ├── nemo-*.md                  # NeMo LLM Training, Guardrails & Agent Skills (~40)
@@ -74,7 +74,7 @@ mcp-cards/
 
 ## 🏷️ Card Categories
 
-### 1. Verified MCP Servers (165 Cards)
+### 1. Verified MCP Servers (183 Cards)
 
 Located under `skills/mcp-*.md`. Each card provides package source, stdio/SSE transport details, required environment variables, and client JSON config:
 
@@ -84,11 +84,14 @@ Located under `skills/mcp-*.md`. Each card provides package source, stdio/SSE tr
 | **☁️ AWS Cloud & Serverless** | AWS Core, DynamoDB, S3 Storage, Lambda, Bedrock AI, CloudWatch | [`mcp-aws-dynamodb.md`](skills/mcp-aws-dynamodb.md), [`mcp-aws-bedrock-ai.md`](skills/mcp-aws-bedrock-ai.md) |
 | **🌐 Google Cloud & Workspace** | GCP Core, BigQuery, Cloud Storage, Vertex AI, Workspace, Maps | [`mcp-google-bigquery.md`](skills/mcp-google-bigquery.md), [`mcp-google-vertex-ai.md`](skills/mcp-google-vertex-ai.md) |
 | **🏢 Microsoft Azure** | Azure Core, DevOps, Blob Storage, Cosmos DB, Azure OpenAI | [`mcp-azure-devops.md`](skills/mcp-azure-devops.md), [`mcp-azure-cosmosdb.md`](skills/mcp-azure-cosmosdb.md) |
-| **💳 Payments & Fintech** | Stripe, PayPal, Square, Plaid, Wise, Brex, Adyen, Chargebee | [`mcp-stripe-payments.md`](skills/mcp-stripe-payments.md), [`mcp-square-payments.md`](skills/mcp-square-payments.md) |
+| **🏢 Enterprise SaaS & CRM** | Salesforce, Zendesk, PostHog, Mixpanel, Strapi, Contentful, Bitbucket, JetBrains | [`mcp-salesforce-crm.md`](skills/mcp-salesforce-crm.md), [`mcp-posthog-analytics.md`](skills/mcp-posthog-analytics.md) |
+| **⚙️ Workflow & Agent Platforms** | n8n Automation, Dify.ai, Flowise AI, Zapier, Make | [`mcp-n8n-automation.md`](skills/mcp-n8n-automation.md), [`mcp-dify-workflow.md`](skills/mcp-dify-workflow.md) |
+| **🤖 Frontier AI & Local Serving** | DeepSeek AI, Qwen DashScope, Ollama Local, vLLM Distributed, ElevenLabs | [`mcp-deepseek-ai.md`](skills/mcp-deepseek-ai.md), [`mcp-ollama-local.md`](skills/mcp-ollama-local.md) |
+| **🇰🇷 Korean Tech & Fintech** | KakaoTalk Alimtalk, Naver Cloud Platform, Toss Payments | [`mcp-kakao-talk.md`](skills/mcp-kakao-talk.md), [`mcp-toss-payments.md`](skills/mcp-toss-payments.md) |
+| **💳 Payments & Global Fintech** | Stripe, PayPal, Square, Plaid, Wise, Brex, Adyen, Chargebee | [`mcp-stripe-payments.md`](skills/mcp-stripe-payments.md), [`mcp-square-payments.md`](skills/mcp-square-payments.md) |
 | **⚡ Cloud & Backend BaaS** | Cloudflare, Supabase, Vercel, Convex, Upstash, Fly.io, Firebase | [`mcp-supabase-backend.md`](skills/mcp-supabase-backend.md), [`mcp-cloudflare-workers.md`](skills/mcp-cloudflare-workers.md) |
 | **🏗️ DevOps & Infra (IaC)** | Docker, Kubernetes, Terraform, Pulumi, Vault, ArgoCD, CircleCI | [`mcp-docker-containers.md`](skills/mcp-docker-containers.md), [`mcp-terraform-iac.md`](skills/mcp-terraform-iac.md) |
 | **🗄️ Databases & Vector DBs** | Neo4j, Milvus, Chroma, PostgreSQL, Redis, MongoDB, ClickHouse, Qdrant | [`mcp-neo4j-graph-db.md`](skills/mcp-neo4j-graph-db.md), [`mcp-milvus-vector.md`](skills/mcp-milvus-vector.md) |
-| **🤖 AI, Voice & Speech** | ElevenLabs, Deepgram, AssemblyAI, Cohere, Anthropic, Groq, HuggingFace | [`mcp-elevenlabs-voice.md`](skills/mcp-elevenlabs-voice.md), [`mcp-deepgram-speech.md`](skills/mcp-deepgram-speech.md) |
 | **🔍 Search & Web Scraping** | Tavily, Exa AI, Firecrawl, Jina Reader, Browserbase, SerpApi | [`mcp-tavily-search.md`](skills/mcp-tavily-search.md), [`mcp-firecrawl-web.md`](skills/mcp-firecrawl-web.md) |
 | **📊 Observability & Logs** | Datadog, Sentry, Grafana, OpenTelemetry, New Relic, Axiom | [`mcp-sentry-errors.md`](skills/mcp-sentry-errors.md), [`mcp-datadog-monitoring.md`](skills/mcp-datadog-monitoring.md) |
 | **🔐 Auth, Security & Network** | Tailscale, Bitwarden, Cloudflare Zero Trust, Auth0, Clerk, Keycloak, Snyk | [`mcp-tailscale-network.md`](skills/mcp-tailscale-network.md), [`mcp-bitwarden-secrets.md`](skills/mcp-bitwarden-secrets.md) |
