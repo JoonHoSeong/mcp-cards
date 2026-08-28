@@ -4,10 +4,11 @@
 /*
 
 # ==========================================
-# 2. Whitelist ONLY Card directories, README & .gitignore
+# 2. Whitelist ONLY Card directories, READMEs & .gitignore
 # ==========================================
 !.gitignore
 !README.md
+!README_KO.md
 !skills/
 !skills/**
 !blueprints/

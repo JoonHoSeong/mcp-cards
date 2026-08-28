@@ -1,6 +1,10 @@
 # 🗂️ MCP Cards & NVIDIA AI Skills Catalog
 
 <p align="center">
+  <b>English</b> | <a href="README_KO.md">한국어</a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/MCP-Model%20Context%20Protocol-4F46E5?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP">
   <img src="https://img.shields.io/badge/NVIDIA-AI%20Skills%20%26%20Blueprints-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA AI">
   <img src="https://img.shields.io/badge/Cards-450%2B%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
