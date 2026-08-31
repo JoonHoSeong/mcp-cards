@@ -7,11 +7,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MCP-Model%20Context%20Protocol-4F46E5?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP">
   <img src="https://img.shields.io/badge/NVIDIA-AI%20Skills%20%26%20Blueprints-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA AI">
-  <img src="https://img.shields.io/badge/카드%20수-580%2B%20검증됨-brightgreen?style=for-the-badge" alt="Cards Count">
+  <img src="https://img.shields.io/badge/카드%20수-590%2B%20검증됨-brightgreen?style=for-the-badge" alt="Cards Count">
   <img src="https://img.shields.io/badge/라이선스-MIT-blue?style=for-the-badge" alt="License">
 </p>
 
-**589개 이상의 검증된 Model Context Protocol (MCP) 서버 명세 카드**와 **NVIDIA AI 에이전트 스킬 및 엔터프라이즈 솔루션 블루프린트**를 집대성한 프로덕션 레디 지식 베이스입니다.
+**598개 이상의 검증된 Model Context Protocol (MCP) 서버 명세 카드**와 **NVIDIA AI 에이전트 스킬 및 엔터프라이즈 솔루션 블루프린트**를 집대성한 프로덕션 레디 지식 베이스입니다.
 
 모든 카드는 **인간 개발자**와 **자율형 AI 에이전트**(Cursor, Claude Desktop, Windsurf, Antigravity, Cline 및 RAG 파이프라인) 모두가 즉시 파싱하고 활용할 수 있는 표준 원자적(Atomic) 마크다운 규격으로 제작되었습니다.
 
@@ -22,7 +22,7 @@
 - [개요](#-개요)
 - [저장소 구조](#-저장소-구조)
 - [카드 카테고리 분류](#-카드-카테고리-분류)
-  - [1. 검증된 외부 MCP 서버 카드 (232개)](#1-검증된-외부-mcp-서버-카드-232개)
+  - [1. 검증된 외부 MCP 서버 카드 (241개)](#1-검증된-외부-mcp-서버-카드-241개)
   - [2. NVIDIA AI 에이전트 스킬 카드 (326개)](#2-nvidia-ai-에이전트-스킬-카드-326개)
   - [3. NVIDIA 솔루션 블루프린트 카드 (31개)](#3-nvidia-솔루션-블루프린트-카드-31개)
 - [카드 표준 규격 (Anatomy)](#-카드-표준-규격-anatomy)
@@ -50,8 +50,8 @@ mcp-cards/
 ├── README_KO.md                   # 한국어 카탈로그 문서 (본 파일)
 ├── .gitignore                     # 저장소 화이트리스트 및 보안 파일 제외 설정
 │
-├── skills/                        # 558개 스킬 & MCP 카드
-│   ├── mcp-*.md                   # 232개 검증된 외부 MCP 서버 카드 (HuggingFace, OpenRouter, Ponytail, AWS 등)
+├── skills/                        # 567개 스킬 & MCP 카드
+│   ├── mcp-*.md                   # 241개 검증된 외부 MCP 서버 카드 (Unreal, ROS 2, dbt, Kafka, HuggingFace 등)
 │   ├── doca-*.md                  # DOCA DPU & 고성능 네트워킹 스킬 (~60개)
 │   ├── jetson-*.md                # Jetson 임베디드 & 엣지 AI 스킬 (~30개)
 │   ├── nemo-*.md                  # NeMo LLM 분산학습, 가드레일 & 에이전트 스킬 (~40개)
@@ -74,18 +74,21 @@ mcp-cards/
 
 ## 🏷️ 카드 카테고리 분류
 
-### 1. 검증된 외부 MCP 서버 카드 (232개)
+### 1. 검증된 외부 MCP 서버 카드 (241개)
 
 `skills/mcp-*.md` 경로에 위치하며, 패키지 소스, 전송 방식(stdio/SSE), 필수 환경 변수, 클라이언트 JSON 설정을 제공합니다:
 
 | 도메인 | 대표 MCP 서버 | 예시 카드 |
 |---|---|---|
+| **🎮 게임 엔진, 3D & 시뮬레이션** | Unreal Engine 5.8 (Epic Games 공식), Godot Engine, Blender 3D | [`mcp-unreal-engine.md`](skills/mcp-unreal-engine.md), [`mcp-godot-engine.md`](skills/mcp-godot-engine.md) |
+| **🤖 로보틱스, Physical AI & IoT** | ROS 2 (로봇 운영체제), MQTT IoT 텔레메트리, Android ADB | [`mcp-ros2-robotics.md`](skills/mcp-ros2-robotics.md), [`mcp-mqtt-iot.md`](skills/mcp-mqtt-iot.md) |
+| **📊 데이터 엔지니어링 & 스트리밍** | dbt Data Build Tool, Apache Kafka, Metabase BI, Databricks, Snowflake | [`mcp-dbt-data-build.md`](skills/mcp-dbt-data-build.md), [`mcp-apache-kafka.md`](skills/mcp-apache-kafka.md) |
 | **🤗 Hugging Face & AI 게이트웨이** | Hugging Face Spaces, Datasets, Endpoints, OpenRouter, Together AI, fal.ai, Mistral | [`mcp-huggingface-spaces-gradio.md`](skills/mcp-huggingface-spaces-gradio.md), [`mcp-openrouter-ai.md`](skills/mcp-openrouter-ai.md) |
 | **🖥️ 서버리스 GPU & AI 인프라** | Modal Labs, RunPod, Lambda Labs, Replicate Deployments | [`mcp-modal-labs-compute.md`](skills/mcp-modal-labs-compute.md), [`mcp-runpod-gpu.md`](skills/mcp-runpod-gpu.md) |
 | **🛠️ 개발자 도구 & 코드 최적화** | Ponytail (Lazy Senior Dev), Apidog, Chrome DevTools, ast-grep, JetBrains | [`mcp-ponytail-lazy-senior-dev.md`](skills/mcp-ponytail-lazy-senior-dev.md), [`mcp-apidog-api-management.md`](skills/mcp-apidog-api-management.md) |
 | **🐙 DevOps, CI/CD, SSH & PaaS** | GitHub Actions, SSH Remote, Render, Railway, Hetzner, Docker, Kubernetes, Terraform | [`mcp-github-actions-cicd.md`](skills/mcp-github-actions-cicd.md), [`mcp-ssh-remote-terminal.md`](skills/mcp-ssh-remote-terminal.md) |
 | **🔬 학술 연구, 수식 연산 & 오픈 검색** | Wolfram Alpha, arXiv, Semantic Scholar, Wikipedia, DuckDuckGo, SearXNG | [`mcp-wolfram-alpha.md`](skills/mcp-wolfram-alpha.md), [`mcp-arxiv-papers.md`](skills/mcp-arxiv-papers.md) |
-| **🛡️ 보안, 공급망 & SAST** | Socket.dev, Semgrep, VirusTotal, Shodan, 1Password, Bitwarden, Vault, Snyk | [`mcp-socket-security.md`](skills/mcp-socket-security.md), [`mcp-semgrep-security.md`](skills/mcp-semgrep-security.md) |
+| **🛡️ 보안, 취약점 스캔 & SAST** | Trivy Container Security, Socket.dev, Semgrep, VirusTotal, Shodan, 1Password | [`mcp-trivy-security.md`](skills/mcp-trivy-security.md), [`mcp-socket-security.md`](skills/mcp-socket-security.md) |
 | **🛍️ 이커머스, CMS & 화상 회의** | Shopify, WordPress, Webflow, Ghost, Zoom, Canva, Figma | [`mcp-shopify-commerce.md`](skills/mcp-shopify-commerce.md), [`mcp-wordpress-cms.md`](skills/mcp-wordpress-cms.md) |
 | **🎨 프론트엔드 & 디자인** | Storybook, Cypress, Tailwind CSS, Raycast | [`mcp-canva-design.md`](skills/mcp-canva-design.md), [`mcp-storybook-ui.md`](skills/mcp-storybook-ui.md) |
 | **☁️ AWS 클라우드 & 서버리스** | AWS Core, DynamoDB, S3, Lambda, Bedrock AI, CloudWatch | [`mcp-aws-dynamodb.md`](skills/mcp-aws-dynamodb.md), [`mcp-aws-bedrock-ai.md`](skills/mcp-aws-bedrock-ai.md) |
@@ -181,7 +184,7 @@ graph LR
 
 ### Claude Desktop / Cursor / Antigravity / Windsurf 연동법
 
-1. 연동하고자 하는 MCP 카드를 선택합니다 (예: `skills/mcp-huggingface-spaces-gradio.md` 또는 `skills/mcp-openrouter-ai.md`).
+1. 연동하고자 하는 MCP 카드를 선택합니다 (예: `skills/mcp-unreal-engine.md` 또는 `skills/mcp-ros2-robotics.md`).
 2. 카드의 **Client Configuration** 섹션에 있는 JSON 스니펫을 복사합니다.
 3. 사용 중인 IDE / 에이전트의 설정 파일에 추가합니다:
    - **Claude Desktop**: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)

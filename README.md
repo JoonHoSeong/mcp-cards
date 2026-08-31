@@ -7,11 +7,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MCP-Model%20Context%20Protocol-4F46E5?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP">
   <img src="https://img.shields.io/badge/NVIDIA-AI%20Skills%20%26%20Blueprints-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA AI">
-  <img src="https://img.shields.io/badge/Cards-580%2B%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
+  <img src="https://img.shields.io/badge/Cards-590%2B%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
 
-A curated, production-ready knowledge base containing **589 verified Model Context Protocol (MCP) server specification cards** and **NVIDIA AI Agent Skills & Solution Blueprints**. 
+A curated, production-ready knowledge base containing **598 verified Model Context Protocol (MCP) server specification cards** and **NVIDIA AI Agent Skills & Solution Blueprints**. 
 
 Every card is crafted in a standardized, atomic Markdown format optimized for both **human developers** and **autonomous AI agents** (Cursor, Claude Desktop, Windsurf, Antigravity, Cline, and RAG pipelines).
 
@@ -22,7 +22,7 @@ Every card is crafted in a standardized, atomic Markdown format optimized for bo
 - [Overview](#-overview)
 - [Repository Structure](#-repository-structure)
 - [Card Categories](#-card-categories)
-  - [1. Verified MCP Servers (232 Cards)](#1-verified-mcp-servers-232-cards)
+  - [1. Verified MCP Servers (241 Cards)](#1-verified-mcp-servers-241-cards)
   - [2. NVIDIA AI Agent Skills (326 Cards)](#2-nvidia-ai-agent-skills-326-cards)
   - [3. NVIDIA Solution Blueprints (31 Cards)](#3-nvidia-solution-blueprints-31-cards)
 - [Card Anatomy & Standard Format](#-card-anatomy--standard-format)
@@ -50,8 +50,8 @@ mcp-cards/
 ├── README_KO.md                   # Korean documentation & catalog index
 ├── .gitignore                     # Repository whitelist & secret protection
 │
-├── skills/                        # 558 Skill & MCP Cards
-│   ├── mcp-*.md                   # 232 Verified MCP Server Cards (HuggingFace, OpenRouter, Ponytail, AWS, etc.)
+├── skills/                        # 567 Skill & MCP Cards
+│   ├── mcp-*.md                   # 241 Verified MCP Server Cards (Unreal, ROS 2, dbt, Kafka, HuggingFace, etc.)
 │   ├── doca-*.md                  # DOCA DPU & High-Performance Networking Skills (~60)
 │   ├── jetson-*.md                # Jetson Embedded & Edge AI Skills (~30)
 │   ├── nemo-*.md                  # NeMo LLM Training, Guardrails & Agent Skills (~40)
@@ -74,18 +74,21 @@ mcp-cards/
 
 ## 🏷️ Card Categories
 
-### 1. Verified MCP Servers (232 Cards)
+### 1. Verified MCP Servers (241 Cards)
 
 Located under `skills/mcp-*.md`. Each card provides package source, stdio/SSE transport details, required environment variables, and client JSON config:
 
 | Domain | Key MCP Servers | Example Cards |
 |---|---|---|
+| **🎮 Gaming, 3D & Simulation** | Unreal Engine 5.8 (Epic Games Native), Godot Engine, Blender 3D | [`mcp-unreal-engine.md`](skills/mcp-unreal-engine.md), [`mcp-godot-engine.md`](skills/mcp-godot-engine.md) |
+| **🤖 Robotics, Physical AI & IoT** | ROS 2 (Robot Operating System), MQTT IoT Messaging, Android ADB | [`mcp-ros2-robotics.md`](skills/mcp-ros2-robotics.md), [`mcp-mqtt-iot.md`](skills/mcp-mqtt-iot.md) |
+| **📊 Data Pipelines & Streaming** | dbt Data Build Tool, Apache Kafka, Metabase BI, Databricks, Snowflake | [`mcp-dbt-data-build.md`](skills/mcp-dbt-data-build.md), [`mcp-apache-kafka.md`](skills/mcp-apache-kafka.md) |
 | **🤗 Hugging Face & AI Gateways** | Hugging Face Spaces, Datasets, Endpoints, OpenRouter, Together AI, fal.ai, Mistral | [`mcp-huggingface-spaces-gradio.md`](skills/mcp-huggingface-spaces-gradio.md), [`mcp-openrouter-ai.md`](skills/mcp-openrouter-ai.md) |
 | **🖥️ Serverless GPU & Compute** | Modal Labs, RunPod, Lambda Labs, Replicate Deployments | [`mcp-modal-labs-compute.md`](skills/mcp-modal-labs-compute.md), [`mcp-runpod-gpu.md`](skills/mcp-runpod-gpu.md) |
 | **🛠️ Developer Tools & Optimization** | Ponytail (Lazy Senior Dev), Apidog, Chrome DevTools, ast-grep, JetBrains | [`mcp-ponytail-lazy-senior-dev.md`](skills/mcp-ponytail-lazy-senior-dev.md), [`mcp-apidog-api-management.md`](skills/mcp-apidog-api-management.md) |
 | **🐙 DevOps, CI/CD, SSH & PaaS** | GitHub Actions, SSH Remote, Render, Railway, Hetzner, Docker, Kubernetes, Terraform | [`mcp-github-actions-cicd.md`](skills/mcp-github-actions-cicd.md), [`mcp-ssh-remote-terminal.md`](skills/mcp-ssh-remote-terminal.md) |
 | **🔬 Science, Math & Open Search** | Wolfram Alpha, arXiv, Semantic Scholar, Wikipedia, DuckDuckGo, SearXNG | [`mcp-wolfram-alpha.md`](skills/mcp-wolfram-alpha.md), [`mcp-arxiv-papers.md`](skills/mcp-arxiv-papers.md) |
-| **🛡️ Security, SAST & Supply Chain** | Socket.dev, Semgrep, VirusTotal, Shodan, 1Password, Bitwarden, Vault, Snyk | [`mcp-socket-security.md`](skills/mcp-socket-security.md), [`mcp-semgrep-security.md`](skills/mcp-semgrep-security.md) |
+| **🛡️ Security, SAST & Vulnerabilities** | Trivy Container Security, Socket.dev, Semgrep, VirusTotal, Shodan, 1Password | [`mcp-trivy-security.md`](skills/mcp-trivy-security.md), [`mcp-socket-security.md`](skills/mcp-socket-security.md) |
 | **🛍️ E-Commerce, CMS & Video** | Shopify, WordPress, Webflow, Ghost, Zoom, Canva, Figma | [`mcp-shopify-commerce.md`](skills/mcp-shopify-commerce.md), [`mcp-wordpress-cms.md`](skills/mcp-wordpress-cms.md) |
 | **🎨 Frontend & UI/Design** | Storybook, Cypress, Tailwind CSS, Raycast | [`mcp-canva-design.md`](skills/mcp-canva-design.md), [`mcp-storybook-ui.md`](skills/mcp-storybook-ui.md) |
 | **☁️ AWS Cloud & Serverless** | AWS Core, DynamoDB, S3 Storage, Lambda, Bedrock AI, CloudWatch | [`mcp-aws-dynamodb.md`](skills/mcp-aws-dynamodb.md), [`mcp-aws-bedrock-ai.md`](skills/mcp-aws-bedrock-ai.md) |
@@ -181,7 +184,7 @@ Every card adheres to a strict, structured layout for predictable parsing:
 
 ### Using with Claude Desktop / Cursor / Antigravity / Windsurf
 
-1. Locate the MCP card you wish to use (e.g., `skills/mcp-huggingface-spaces-gradio.md` or `skills/mcp-openrouter-ai.md`).
+1. Locate the MCP card you wish to use (e.g., `skills/mcp-unreal-engine.md` or `skills/mcp-ros2-robotics.md`).
 2. Copy the JSON snippet from the **Client Configuration** section.
 3. Paste it into your agent/IDE configuration file:
    - **Claude Desktop**: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
