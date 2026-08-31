@@ -7,11 +7,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MCP-Model%20Context%20Protocol-4F46E5?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP">
   <img src="https://img.shields.io/badge/NVIDIA-AI%20Skills%20%26%20Blueprints-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA AI">
-  <img src="https://img.shields.io/badge/Cards-540%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
+  <img src="https://img.shields.io/badge/Cards-542%20Verified-brightgreen?style=for-the-badge" alt="Cards Count">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
 
-A curated, production-ready knowledge base containing **540 verified Model Context Protocol (MCP) server specification cards** and **NVIDIA AI Agent Skills & Solution Blueprints**. 
+A curated, production-ready knowledge base containing **542 verified Model Context Protocol (MCP) server specification cards** and **NVIDIA AI Agent Skills & Solution Blueprints**. 
 
 Every card is crafted in a standardized, atomic Markdown format optimized for both **human developers** and **autonomous AI agents** (Cursor, Claude Desktop, Windsurf, Antigravity, Cline, and RAG pipelines).
 
@@ -22,7 +22,7 @@ Every card is crafted in a standardized, atomic Markdown format optimized for bo
 - [Overview](#-overview)
 - [Repository Structure](#-repository-structure)
 - [Card Categories](#-card-categories)
-  - [1. Verified MCP Servers (183 Cards)](#1-verified-mcp-servers-183-cards)
+  - [1. Verified MCP Servers (185 Cards)](#1-verified-mcp-servers-185-cards)
   - [2. NVIDIA AI Agent Skills (326 Cards)](#2-nvidia-ai-agent-skills-326-cards)
   - [3. NVIDIA Solution Blueprints (31 Cards)](#3-nvidia-solution-blueprints-31-cards)
 - [Card Anatomy & Standard Format](#-card-anatomy--standard-format)
@@ -50,8 +50,8 @@ mcp-cards/
 ├── README_KO.md                   # Korean documentation & catalog index
 ├── .gitignore                     # Repository whitelist & secret protection
 │
-├── skills/                        # 509 Skill & MCP Cards
-│   ├── mcp-*.md                   # 183 Verified MCP Server Cards (AWS, GCP, Salesforce, Kakao, etc.)
+├── skills/                        # 511 Skill & MCP Cards
+│   ├── mcp-*.md                   # 185 Verified MCP Server Cards (AWS, GCP, Salesforce, Memory, etc.)
 │   ├── doca-*.md                  # DOCA DPU & High-Performance Networking Skills (~60)
 │   ├── jetson-*.md                # Jetson Embedded & Edge AI Skills (~30)
 │   ├── nemo-*.md                  # NeMo LLM Training, Guardrails & Agent Skills (~40)
@@ -74,7 +74,7 @@ mcp-cards/
 
 ## 🏷️ Card Categories
 
-### 1. Verified MCP Servers (183 Cards)
+### 1. Verified MCP Servers (185 Cards)
 
 Located under `skills/mcp-*.md`. Each card provides package source, stdio/SSE transport details, required environment variables, and client JSON config:
 
@@ -87,6 +87,7 @@ Located under `skills/mcp-*.md`. Each card provides package source, stdio/SSE tr
 | **🏢 Enterprise SaaS & CRM** | Salesforce, Zendesk, PostHog, Mixpanel, Strapi, Contentful, Bitbucket, JetBrains | [`mcp-salesforce-crm.md`](skills/mcp-salesforce-crm.md), [`mcp-posthog-analytics.md`](skills/mcp-posthog-analytics.md) |
 | **⚙️ Workflow & Agent Platforms** | n8n Automation, Dify.ai, Flowise AI, Zapier, Make | [`mcp-n8n-automation.md`](skills/mcp-n8n-automation.md), [`mcp-dify-workflow.md`](skills/mcp-dify-workflow.md) |
 | **🤖 Frontier AI & Local Serving** | DeepSeek AI, Qwen DashScope, Ollama Local, vLLM Distributed, ElevenLabs | [`mcp-deepseek-ai.md`](skills/mcp-deepseek-ai.md), [`mcp-ollama-local.md`](skills/mcp-ollama-local.md) |
+| **🧠 Memory & Reasoning** | Anthropic Knowledge Graph Memory, Anthropic Sequential Thinking | [`mcp-memory-graph.md`](skills/mcp-memory-graph.md), [`mcp-sequential-thinking.md`](skills/mcp-sequential-thinking.md) |
 | **🇰🇷 Korean Tech & Fintech** | KakaoTalk Alimtalk, Naver Cloud Platform, Toss Payments | [`mcp-kakao-talk.md`](skills/mcp-kakao-talk.md), [`mcp-toss-payments.md`](skills/mcp-toss-payments.md) |
 | **💳 Payments & Global Fintech** | Stripe, PayPal, Square, Plaid, Wise, Brex, Adyen, Chargebee | [`mcp-stripe-payments.md`](skills/mcp-stripe-payments.md), [`mcp-square-payments.md`](skills/mcp-square-payments.md) |
 | **⚡ Cloud & Backend BaaS** | Cloudflare, Supabase, Vercel, Convex, Upstash, Fly.io, Firebase | [`mcp-supabase-backend.md`](skills/mcp-supabase-backend.md), [`mcp-cloudflare-workers.md`](skills/mcp-cloudflare-workers.md) |
@@ -174,7 +175,7 @@ Every card adheres to a strict, structured layout for predictable parsing:
 
 ### Using with Claude Desktop / Cursor / Antigravity / Windsurf
 
-1. Locate the MCP card you wish to use (e.g., `skills/mcp-aws-dynamodb.md`).
+1. Locate the MCP card you wish to use (e.g., `skills/mcp-aws-dynamodb.md` or `skills/mcp-memory-graph.md`).
 2. Copy the JSON snippet from the **Client Configuration** section.
 3. Paste it into your agent/IDE configuration file:
    - **Claude Desktop**: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
